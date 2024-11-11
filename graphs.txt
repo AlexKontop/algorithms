@@ -1,0 +1,69 @@
+n = [10, 100, 1000];
+time_graph = [0.26415824890136718750, 4.60870218276977539062, 534.67694473266601562500];
+
+figure;
+semilogx(n, time_graph, '-o', 'LineWidth', 2);
+title('Χρόνος Απεικόνισης Γράφου');
+xlabel('Αριθμός Κόμβων (n)');
+ylabel('Χρόνος (sec)');
+grid on;
+
+n = [10, 100, 1000];
+time_dfs = [0.00000000000000000000, 0.00000000000000000000, 0.03126788139343261719];
+
+figure;
+semilogx(n, time_dfs, '-o', 'LineWidth', 2);
+title('Χρόνος DFS');
+xlabel('Αριθμός Κόμβων (n)');
+ylabel('Χρόνος (sec)');
+grid on;
+
+n = [10, 100, 1000];
+time_bfs = [0.00000000000000000000, 0.00000000000000000000, 0.10980081558227539062];
+
+figure;
+semilogx(n, time_bfs, '-o', 'LineWidth', 2);
+title('Χρόνος BFS');
+xlabel('Αριθμός Κόμβων (n)');
+ylabel('Χρόνος (sec)');
+grid on;
+
+n = [10, 100, 1000];
+time_dijkstra = [0.00000000000000000000, 0.00000000000000000000, 0.10565471649169921875];
+
+figure;
+semilogx(n, time_dijkstra, '-o', 'LineWidth', 2);
+title('Χρόνος Dijkstra');
+xlabel('Αριθμός Κόμβων (n)');
+ylabel('Χρόνος (sec)');
+grid on;
+
+n = [10, 100, 1000];
+time_kruskal = [0.09382581710815429688, 0.54171943664550781250, 5.36986780166625976562];
+
+figure;
+semilogx(n, time_kruskal, '-o', 'LineWidth', 2);
+title('Χρόνος Kruskal');
+xlabel('Αριθμός Κόμβων (n)');
+ylabel('Χρόνος (sec)');
+grid on;
+
+n = [10, 100, 1000];
+time_prim = [0.11525130271911621094, 0.42728328704833984375, 5.25900721549987792969];
+
+figure;
+semilogx(n, time_prim, '-o', 'LineWidth', 2);
+title('Χρόνος Prim');
+xlabel('Αριθμός Κόμβων (n)');
+ylabel('Χρόνος (sec)');
+grid on;
+
+n = [10, 100, 1000];
+total_time = [0.47323536872863769531, 5.57770490646362304688, 545.55254316329956054688];
+
+figure;
+semilogx(n, total_time, '-o', 'LineWidth', 2);
+title('Συνολικός Χρόνος Εκτέλεσης');
+xlabel('Αριθμός Κόμβων (n)');
+ylabel('Χρόνος (sec)');
+grid on;
